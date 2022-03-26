@@ -34,7 +34,7 @@ export class HelloComponent implements OnInit {
   }
 
   onChange($event: any) {
-    let filteredData = this.dataSource.data.filter((item: Item) => {
+    let filteredData = ELEMENT_DATA.filter((item: Item) => {
       return item.status == ItemStatus[$event.value];
     });
     this.dataSource = new MatTableDataSource(filteredData);

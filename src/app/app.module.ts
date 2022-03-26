@@ -7,6 +7,9 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
+import { MatInputModule } from '@angular/material/input';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
   imports: [
@@ -15,6 +18,9 @@ import { MatSelectModule } from '@angular/material/select';
     MatTableModule,
     MatFormFieldModule,
     MatSelectModule,
+    MatInputModule,
+    BrowserAnimationsModule,
+    MatSortModule,
   ],
   declarations: [AppComponent, HelloComponent],
   bootstrap: [AppComponent],
